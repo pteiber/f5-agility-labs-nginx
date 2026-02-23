@@ -251,3 +251,7 @@ Delete the lab resources:
 .. code-block:: bash
 
    kubectl delete -f .
+
+.. note::
+   
+   You should get one expected error when trying to delete ``2.cafe-ingress.yaml``.
