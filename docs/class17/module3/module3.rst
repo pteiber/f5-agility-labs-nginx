@@ -19,7 +19,7 @@ Confirm environment variables are still set to point to the IngressLink virtual 
 
 **Output**
 
-.. code-block:: bash
+.. code-block:: console
 
    ubuntu@ubuntu:~$ echo -e "NIC address: $NIC_IP\nHTTP port  : $HTTP_PORT\nHTTPS port : $HTTPS_PORT"
    NIC address: 10.1.1.9

@@ -32,7 +32,7 @@ Check NGINX Ingress Controller IP address, HTTP and HTTPS ports:
 
 **Output**
 
-.. code-block:: bash
+.. code-block:: console
 
    ubuntu@ubuntu:~$ echo -e "NIC address: $NIC_IP\nHTTP port  : $HTTP_PORT\nHTTPS port : $HTTPS_PORT"
    NIC address: 10.1.1.9
@@ -142,7 +142,7 @@ Check the newly created ``VirtualServer`` resource:
 
 You may get a warning like the following:
 
-.. code-block:: bash
+.. code-block:: console
 
    Warning: short name "vs" could also match lower priority resource virtualservers.k8s.nginx.org
    No resources found in default namespace.
@@ -156,7 +156,7 @@ You can confirm this with ``kubectl``:
 
 You can see ``VirtualServer`` custom resources exist in both the ``cis.f5.com/v1`` and ``k8s.nginx.org/v1`` API groups.
 
-.. code-block:: bash
+.. code-block:: console
 
    ubuntu@ubuntu:~/NGINX-Ingress-Controller-Lab/labs/1.basic-ingress$ kubectl api-resources | grep vs
    virtualservers                      vs           cis.f5.com/v1                     true         VirtualServer
